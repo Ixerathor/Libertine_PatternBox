@@ -110,7 +110,7 @@ class PatternsSlideshow extends HTMLElement {
         { childID: "back", mtl: texture_mtl },
       ];
 
-      blendLoader.load('./assets/box_test.gltf', function(gltf) {
+      blendLoader.load('./src/assets/box_test.gltf', function(gltf) {
         let gltfScene = gltf.scene;
         gltfScene.scale.set(1.75, 2.25, 1.25);
         gltfScene.position.set(0, 0.3, 1);
