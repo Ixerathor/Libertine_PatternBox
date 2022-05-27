@@ -114,9 +114,6 @@ class PatternsSlideshow extends HTMLElement {
         let gltfScene = gltf.scene;
         gltfScene.scale.set(1.75, 2.25, 1.25);
         gltfScene.position.set(0, 0.3, 1);
-        i === 0
-          ? gltfScene.position.set(0, 0.3, 1)
-          : gltfScene.position.set(window.innerWidth, 0.3, 1);
         // Add custom material
         for (let obj of material_map) {
           _this.attachTextureObj(gltfScene, obj.childID, obj.mtl);
@@ -202,3 +199,5 @@ class PatternsSlideshow extends HTMLElement {
   }
 
 }
+
+customElements.define('patterns-slideshow', PatternsSlideshow);
